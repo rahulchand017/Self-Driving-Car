@@ -1,0 +1,37 @@
+# data and models - too large for github
+data/driving_dataset/
+data/driving_dataset/*
+saved_models/regression_model/checkpoint
+saved_models/regression_model/model.ckpt*
+saved_models/lane_segmentation_model/*.pt
+saved_models/object_detection_model/*.pt
+
+# training outputs
+model_training/train_steering_angle/save/
+model_training/train_steering_angle/save2/
+model_training/train_steering_angle/logs/
+model_training/train_steering_angle/logs2/
+
+# python stuff
+__pycache__/
+*.pyc
+*.pyo
+.conda/
+.venv/
+venv/
+*.egg-info/
+
+# mac and windows junk
+.DS_Store
+Thumbs.db
+
+# jupyter
+.ipynb_checkpoints/
+
+# videos
+*.mp4
+*.avi
+!demo_thumbnail.mp4
+
+# environment
+.env
