@@ -1,8 +1,8 @@
 # data and models - too large for github
 data/driving_dataset/
 data/driving_dataset/*
-saved_models/regression_model/checkpoint
-saved_models/regression_model/model.ckpt*
+#saved_models/regression_model/checkpoint
+#saved_models/regression_model/model.ckpt*
 saved_models/lane_segmentation_model/*.pt
 saved_models/object_detection_model/*.pt
 
