@@ -36,7 +36,7 @@ class ImageSegmentation:
             frame, conf=self.conf_threshold, verbose=False
         )[0]
         overlay = self._draw_results(
-            overlay, lane_results, self.lane_colors,
+            frame, overlay, lane_results, self.lane_colors,
             show_conf=False, is_lane=True
         )
 
@@ -45,13 +45,13 @@ class ImageSegmentation:
             frame, conf=self.conf_threshold, verbose=False
         )[0]
         overlay = self._draw_results(
-            overlay, obj_results, self.object_colors,
+            frame, overlay, obj_results, self.object_colors,
             show_conf=True, is_lane=False
         )
 
         return overlay
 
-    def _draw_results(self, overlay, results, colors,
+    def _draw_results(self,frame, overlay, results, colors,
                       show_conf, is_lane):
         if results.masks is None:
             return overlay

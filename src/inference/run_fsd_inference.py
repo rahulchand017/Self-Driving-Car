@@ -24,7 +24,7 @@ class SelfDrivingCarSimulator:
         if wheel is None:
             raise FileNotFoundError(f'steering wheel image not found at {wheel_path}')
         self.wheel_img = wheel
-        self.rows, self.cols = wheel.shape
+        self.rows, self.cols = wheel.shape[:2]
 
         # smoothed angle for stable wheel rotation
         self.smoothed_angle = 0.0
