@@ -15,7 +15,7 @@ class SteeringAnglePredictor:
             # get input/output tensors by name
             self.x = self.graph.get_tensor_by_name('Placeholder:0')
             self.keep_prob = self.graph.get_tensor_by_name('Placeholder_2:0')
-            self.y = self.graph.get_tensor_by_name('mul:0')
+            self.y = self.graph.get_tensor_by_name('Mul:0')
 
         print(f'steering model loaded from {model_path}')
 
